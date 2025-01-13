@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Your Name - Portfolio</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+margin: 30px;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+}
+header .logo {
+
+background-color: #4CAF50;
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+
+header .logo h1 {
+margin: 0;
+} 
+
+header .tagline {
+font-style: italic;
+margin-top: 0px;
+text-align: center;
+padding: 10px;
+background-color: rgb(12, 182, 12);
+color: white;
+}  
+header .logo h1  {
+margin: 0;
+animation: popUp 1.5s ease-in-out;
+
+}
+
+@keyframes popUp {
+0% {
+opacity: 0;
+transform: scale(0.5);
+}
+50% {
+opacity: 0.7;
+transform: scale(1.1);
+}
+100% {
+opacity: 1;
+transform: scale(1);
+}
+}
+#about {
+padding: 40px 20px;
+background-color: white;
+text-align: center;
+}
+
+#about h2 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+
+.profile-pic {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 20px;
+} 
+#skills {
+padding: 40px 20px;
+background-color: #f9f9f9;
+text-align: center;
+}
+
+#skills h2 {
+font-size: 2em;
+margin-bottom: 20px;
+color: #333;
+}
+
+#skills ul {
+list-style-type: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+}
+
+#skills li {
+display: inline-block;
+margin: 10px;
+padding: 15px 30px;
+background-color: #4CAF50;
+color: white;
+border-radius: 30px;
+font-size: 1.2em;
+transition: all 0.2s ease;
+}
+
+#skills li:hover {
+background-color: #45a049;  
+transform: translateY(-15px); 
+box-shadow: 0 16px 32px green;
+}
+@media (max-width: 768px) {
+#skills li {
+font-size: 1em;
+padding: 10px 20px; 
+}
+}
+#projects {
+padding: 40px 20px;
+background-color: white;
+text-align: center;
+}
+
+#projects h2 {
+font-size: 2em;
+margin-bottom: 20px;
+color: #010b0e;
+}
+
+.project {
+display: inline-block;
+width: 45%;
+margin: 20px;
+background-color: #f1f1f1;
+padding: 20px;
+text-align: center;
+border-radius: 5px;
+transition: transform 0.2s ease , box-shadow 0.2s ease;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+transform: translateY(-20px);
+box-shadow: 0 10px 20px rgb(28, 120, 28);
+}
+
+.project img {
+height: 200px;
+border-radius: 5px;
+margin-bottom: 0px;
+}
+
+.project h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+color: #17baf0;
+}
+
+.project p {
+font-size: 1em;
+color: #555;
+}
+@media (max-width: 768px) {
+.project {
+width: 90%; 
+margin: 10px auto;
+}
+
+#projects h2 {
+font-size: 1.8em; 
+}
+}
+#resume {
+color: black;
+padding: 40px 20px;
+background-color: #f9f9f9;
+text-align: center;
+}
+
+#resume a {
+text-decoration: none;
+color: #4CAF50;
+font-weight: bold;
+margin: 10px 20px;
+padding: 10px 20px;
+display: inline-block;
+background-color: rgb(36, 192, 36);
+border-radius: 5px;
+}
+#resume a:hover{
+background-color: rgb(37, 207, 37);
+}
+
+#contact {
+padding: 40px 20px;
+background-color: white;
+text-align: center;
+}
+
+#contact h2 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<h1>GAURAV HARGUDE</h1>
+</div>
+<p class="tagline">A passionate web developer</p>
+</header>
+<section id="about">
+<h2>About Me</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" alt="Your Photo" class="profile-pic">
+<p>
+I am a web developer with experience in front-end technologies like HTML, CSS, and JavaScript.
+I love creating clean, user-friendly, and responsive websites.
+</p>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Node.js</li>
+</ul>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="project">
+<img src="https://cdni.iconscout.com/illustration/premium/thumb/weather-app-illustration-download-in-svg-png-gif-file-formats--online-update-smartphone-public-broadcasting-service-pack-network-communication-illustrations-3738479.png" alt="Project 1" height="200 px" width="200 px">
+<h3>Weather App</h3>
+<p>The Weather App project provides real-time weather updates based on user location or searched cities. It uses an external API to fetch accurate weather data, including temperature, humidity, wind speed, and forecast. The app features a clean and responsive design, ensuring smooth usage across devices. Users can view current weather conditions along with a 5-day forecast. It's built using HTML, CSS, JavaScript, and integrates with third-party APIs for dynamic content updates.</p>
+</div>
+<div class="project">
+<img src="https://www.pngplay.com/wp-content/uploads/6/E-Commerce-Transparent-File.png" alt="Project 2" height="200px" width="200px">
+<h3>E-commerce Platform</h3>
+<p>The E-Commerce Platform project allows users to browse and purchase products online with ease. It features a user-friendly interface, product search, and category filtering options. Secure payment integration enables users to complete transactions safely. Admin functionalities are included for managing product listings, inventory, and order tracking. Built using HTML, CSS, JavaScript, and back-end technologies like Node.js or PHP for seamless operation and scalability..</p>
+</div>
+</section>
+<section id="resume">
+<h2>Resume</h2>
+<p>Click below to download my resume:</p>
+<a href="resume.pdf " download style="color: black;">Download Resume</a>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: your-email@example.com</p>
+<p>Phone: (123) 456-7890</p>
+</section>
+<footer>
+<p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
